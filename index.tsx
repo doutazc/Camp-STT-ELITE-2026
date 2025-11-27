@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import App from './App'; // Cela fait le lien avec votre fichier App.tsx visible à gauche
 
 const rootElement = document.getElementById('root');
+
 if (!rootElement) {
-  throw new Error("Could not find root element to mount to");
+  throw new Error('Impossible de trouver l\'élément racine');
 }
 
 const root = ReactDOM.createRoot(rootElement);
+
 root.render(
   <React.StrictMode>
     <App />
